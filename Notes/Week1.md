@@ -8,7 +8,7 @@ Static size once created. Efficient for static data.
 
 * In Java, arrays themselves are `objects`, even when they hold primitive data types
 * While arrays can hold various types, a single array instance can only hold homogenous elements
-* Arrays vs. Collections: While `arrays` can hold `primitive types and objects`, 
+* Arrays vs. Collections: While `arrays` can hold both `primitive types and objects`, 
 Java `Collections (like ArrayList, LinkedList, etc.)` 
 are designed to work with `objects` only and cannot 
 directly store primitive types.
