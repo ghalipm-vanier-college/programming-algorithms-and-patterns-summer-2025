@@ -1,5 +1,5 @@
 
-## Basic Data Structures: `Arrays and  Array List` 
+## Basic Data Structures: `Arrays, Array List and Linked List` 
 
 ## Arrays 
 Arrays in Java can store elements of any type: 
