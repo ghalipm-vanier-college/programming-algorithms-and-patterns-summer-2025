@@ -48,7 +48,7 @@ part of java.util.
 ## Examples
 ### Object ArrayList ( Pre-Generics or Raw Type ): 
 * An Object ArrayList refers to an ArrayList declared without a specific type parameter, like 
- `ArrayList fruits = new ArrayList<>(Arrays.asList("Apple", 12));` no more type safe
+ `ArrayList fruits = new ArrayList<>(Arrays.asList("Apple", 12));` no type parameter.
 ### Generic ArrayList ( an ArrayList declared with a type parameter ):
 * `ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));`
 ### Dynamic addition: 
