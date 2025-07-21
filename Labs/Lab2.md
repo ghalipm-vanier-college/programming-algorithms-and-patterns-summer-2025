@@ -37,6 +37,5 @@ ________________________________________
 *	 Use the clear() method to remove all elements from studentAges. Print studentAges and its size to confirm it's empty.
 
 #### 7.	Conceptual Questions on ArrayList Performance:
-*		Question 1: Explain in your own words why adding an element to the middle of an ArrayList can be less efficient than adding an element to the end of an ArrayList.
+*	Question 1: Explain in your own words why adding an element to the middle of an ArrayList can be less efficient than adding an element to the end of an ArrayList.
 *	Question 2: When would you prefer using an ArrayList over a traditional Java array? Provide at least two scenarios.
-
