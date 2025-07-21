@@ -9,10 +9,10 @@
 
 * Add comments to your code explaining your design choices related to OOP principles.
 
-### Task 1: Managing Employee Data (Encapsulation)
+#### Task 1: Managing Employee Data (Encapsulation)
 * Goal: Design an Employee class that properly encapsulates its data, ensuring data integrity for sensitive information like salary.
 
-Create an Employee class:
+* Create an Employee class:
 
 It should have the following private fields:
 
@@ -20,15 +20,15 @@ name (String)
 
 salary (double)
 
-Implement a constructor to initialize name and salary.
+* Implement a constructor to initialize name and salary.
 
-Crucially: The salary must be positive. If a non-positive value is passed during creation, set salary to 0.0 and print a warning message to the console.
+* Crucially: The salary must be positive. If a non-positive value is passed during creation, set salary to 0.0 and print a warning message to the console.
 
-Provide public getter methods for both name (getName()) and salary (getSalary()).
+* Provide public getter methods for both name (getName()) and salary (getSalary()).
 
-Important: Do not provide a setter method for salary to ensure it can only be set at object creation.
+* Important: Do not provide a setter method for any of salary or name to ensure it can only be set at object creation.
 
-Demonstrate Encapsulation:
+* Demonstrate Encapsulation:
 
 In your main method, create two Employee objects:
 
@@ -40,10 +40,10 @@ Try to directly access and modify the private salary field (e.g., employee.salar
 
 Use the public getter methods (getName(), getSalary()) to retrieve and print the details of both Employee objects.
 
-Task 2: Employee Hierarchy (Inheritance) - No changes to this task from previous version.
-Goal: Design a simple employee hierarchy to demonstrate inheritance.
+#### Task 2: Employee Hierarchy (Inheritance) - No changes to this task from previous version.
+* Goal: Design a simple employee hierarchy to demonstrate inheritance.
 
-Create a Employee class:
+* Create a Employee class:
 
 Fields: name (String), employeeId (String), baseSalary (double).
 
@@ -83,8 +83,8 @@ In your main method, create instances of Employee, Manager, and SalesPerson.
 
 Call getDetails() and calculatePay() for each instance. Observe how the overridden methods in Manager and SalesPerson provide specialized behavior while still leveraging the base Employee structure.
 
-Task 3: Geometric Calculations (Polymorphism - Overriding & Interfaces)
-Goal: Implement polymorphism using separate interfaces for area and perimeter, applied to different geometric shapes.
+#### Task 3: Geometric Calculations (Polymorphism - Overriding & Interfaces)
+* Goal: Implement polymorphism using separate interfaces for area and perimeter, applied to different geometric shapes.
 
 Create Two Interfaces:
 
@@ -106,7 +106,9 @@ Private fields: majorAxis (double), minorAxis (double).
 
 Constructor to initialize these fields.
 
-Implement calculateArea() (π * majorAxis * minorAxis) and calculatePerimeter() (approx. π * (1.5 * (majorAxis + minorAxis) - sqrt(majorAxis * minorAxis))). For simplicity, you can use a simpler approximation for perimeter like π * (majorAxis + minorAxis).
+Implement calculateArea() (π * majorAxis * minorAxis) and calculatePerimeter() (approx. π * (1.5 * (majorAxis + minorAxis) - sqrt(majorAxis * minorAxis))). 
+
+For simplicity, you can use a simpler approximation for perimeter like π * (majorAxis + minorAxis).
 
 Parallelogram class:
 
@@ -130,8 +132,8 @@ Loop 2: Iterate through the IShapePerimeter list. For each object, call calculat
 
 Explain: How does this setup demonstrate runtime polymorphism, allowing you to treat different shapes uniformly based on the interfaces they implement?
 
-Task 4: Simple Math Utility (Polymorphism - Overloading)
-Goal: Implement method overloading within a single utility class to perform similar operations on different data types.
+#### Task 4: Simple Math Utility (Polymorphism - Overloading)
+* Goal: Implement method overloading within a single utility class to perform similar operations on different data types.
 
 Create a MathUtils class:
 
@@ -159,8 +161,8 @@ Print the results of each call.
 
 Explain: How does the Java compiler determine which specific add or findMax method to call when you invoke them?
 
-* Task 5: Library User Roles (Abstraction & Polymorphism)
-Goal: Design a system to represent different types of library users (Librarian, Student) using abstraction, and demonstrate their polymorphic behavior.
+####  Task 5: Library User Roles (Abstraction & Polymorphism)
+* Goal: Design a system to represent different types of library users (Librarian, Student) using abstraction, and demonstrate their polymorphic behavior.
 
 Create an abstract class LibraryUser:
 
@@ -207,8 +209,8 @@ Call getUserDetails().
 Call performDuty().
 
 Explain: How does the LibraryUser abstract class provide a common "blueprint" for different user types, and how does calling performDuty() on LibraryUser references demonstrate polymorphism?
-* Task 6: Vehicle Energy Management (Advanced Abstraction & Interfaces)
-Goal: Explore abstraction and interfaces for managing vehicle operations and energy.
+####  Task 6: Vehicle Energy Management (Advanced Abstraction & Interfaces)
+* Goal: Explore abstraction and interfaces for managing vehicle operations and energy.
 
 Create an abstract class AbstractVehicle:
 
