@@ -147,7 +147,8 @@ Just like we discussed implementing `MyArrayList` and `MyLinkedList`, we can bui
       
     * This BST is not self-balancing, so if inserts are in ascending or descending order, the tree degrades to a “linked list” and loses efficiency.
     
-    * Example: Inserting [1,2,3,4,5,6,7] produces a one-sided chain rather than a bushy, balanced tree, so traversal is still correct, but search/insert becomes O(n) instead of O(log n). For [4, 3, 1, 2, 6, 5, 7], it will be a balanced tree with O(log n) search/insert. So the insertion `order` matters for BST and the first entered value is the root and remains so.
+    * Example: Inserting [1,2,3,4,5,6,7] produces a one-sided chain rather than a bushy, balanced tree, so traversal is still correct, but search/insert becomes O(n) instead of O(log n). For [4, 3, 1, 2, 6, 5, 7], it will be a balanced tree with O(log n) search/insert.
+    * The insertion `order` matters for BST, the first entered value is the root and remains so.
     
     * **Summary** :
     * The standard `BST is not self-sorting` in the sense of balancing or maintaining optimal shape, but by its structure, `in-order traversal` always outputs a `sorted` sequence.
