@@ -135,6 +135,27 @@ Just like we discussed implementing `MyArrayList` and `MyLinkedList`, we can bui
 
 -----
 
+ * **How BST "Sorts" the Values**
+
+    * The BST does NOT re-arrange the array or itself to be "in order" after every insert.
+    
+    * Each insert just goes left or right, preserving the property.
+    
+    * The `sorted order` is only produced if you perform an `in-order traversal` after building the tree.
+    
+    * **Caveat: BST Not Self-Balancing**
+      
+    * This BST is not self-balancing, so if inserts are in ascending or descending order, the tree degrades to a “linked list” and loses efficiency.
+    
+    * Example: Inserting [1,2,3,4,5,6,7] produces a one-sided chain rather than a bushy, balanced tree, so traversal is still correct, but search/insert becomes O(n) instead of O(log n). For [4, 3, 1, 2, 6, 5, 7], it will be a balanced tree with O(log n) search/insert. So the insertion `order` matters for BST and the first entered value is the root and remains so.
+    
+    * **Summary** :
+    * The standard `BST is not self-sorting` in the sense of balancing or maintaining optimal shape, but by its structure, `in-order traversal` always outputs a `sorted` sequence.
+    * Standard BST "sorts" values—by insertion rules and then in-order traversal, not by self-balancing or rearrangement after each operation.
+    * A Binary Search Tree (BST) is a specific type of binary tree with extra ordering rules. All BSTs are binary trees (BT), but not all binary trees are BSTs.
+    * BST is efficient in searching, insertion, and deletion — used in sets, maps, etc.
+
+A reference: more about [BST](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1126/lectures/20/Slides20.pdf)
 ## III. Review of Recursion
 
 Recursion is a powerful programming technique often used with hierarchical data structures like trees.
