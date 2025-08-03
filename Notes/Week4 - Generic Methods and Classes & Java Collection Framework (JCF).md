@@ -1,14 +1,15 @@
 # Generic Methods and Classes & Java Collection Framework (JCF)
   ## 1. Generic Methods and Classes in Java
-        * Generics enable you to write classes and methods that work with any data type, 
+  * Generics enable you to write classes and methods that work with any data type, 
           making the code more reusable and type-safe.
         
-        * Why use Generics?
-        * Code Reusability: One class/method works with multiple data types.
+  * Why use Generics?
+  
+  * Code Reusability: One class/method works with multiple data types.
+      
+  * Type Safety: Errors caught at compile time.
         
-        * Type Safety: Errors caught at compile time.
-        
-        * No Casting: Easier and safer code without explicit casts.
+  * No Casting: Easier and safer code without explicit casts.
 
  ### Generic Class Example
  * **Generic class with type parameter T**
