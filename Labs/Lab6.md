@@ -11,7 +11,7 @@
 
 ---
 
-### Task 1: `MyArrayList` - Core Operations (Easy)
+### Task 1: `MyArrayList` - Core Operations 
 
 **Goal:** Implement the fundamental components of an array-backed list.
 
@@ -27,7 +27,7 @@
 
 ---
 
-### Task 2: `MyLinkedList` - Head/Tail Operations (Easy)
+### Task 2: `MyLinkedList` - Head/Tail Operations 
 
 **Goal:** Understand node creation and pointer manipulation for list ends.
 
@@ -45,7 +45,7 @@
 
 ---
 
-### Task 3: `MyArrayList` - Access & Removal by Index (Medium)
+### Task 3: `MyArrayList` - Access & Removal by Index 
 
 **Goal:** Practice precise element access and array shifting.
 
@@ -62,7 +62,7 @@
 
 ---
 
-### Task 4: `MyLinkedList` - Indexed Access & Insertion (Medium)
+### Task 4: `MyLinkedList` - Indexed Access & Insertion 
 
 **Goal:** Master list traversal and pointer manipulation for middle operations.
 
