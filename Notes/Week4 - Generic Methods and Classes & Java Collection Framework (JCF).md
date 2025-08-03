@@ -41,21 +41,6 @@ public class Utils {
     public static <T> void printArray(T[] array) {
         System.out.println(Arrays.toString(array));
     }    
-
-    // Generic method to find max of an array
-    public static <T extends Comparable<T>> T  findMax(T[] array) {
-        T max=(array.length==0)?null:array[0];
-        for (T num: array){
-            max=(max.compareTo(num)<0)?num:max;
-        }
-        return max;
-    }
-
-    //Generic addition of two elements with proper operators: 
-    public static <T> T add(T elem1, T elem2, BinaryOperator<T> adder) {
-        return adder.apply(elem1, elem2);
-    }
-
 }
 
 ```
@@ -70,5 +55,10 @@ public class Utils {
       * Set: No duplicates, unordered or sorted (e.g., HashSet, TreeSet)
       
       * Map: Key-value pairs (not a Collection)
+
+      <img width="852" height="612" alt="image" src="https://github.com/user-attachments/assets/f32c8864-c4a2-4905-8eea-d81d28eb7b49" />
       
-      * Common Concrete Classes:
+  ### Common Concrete Classes:
+      <img width="954" height="429" alt="image" src="https://github.com/user-attachments/assets/5c27b78d-bc22-4cae-a5be-de3359296a46" />
+
+
