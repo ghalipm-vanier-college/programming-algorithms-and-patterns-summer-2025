@@ -7,6 +7,44 @@
 A lambda expression is an *anonymous function*—a block of code you can pass around and execute, 
 introduced in Java 8 for concise, functional-style programming.
 
+### Java Streams should be used when:
+```java
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
+```
+* Filtering: selecting elements from a collection based on a specific condition.
+```java
+List<Integer> evenNumbers = numbers.stream().filter(number -> number%2==0).toList();
+```
+* Mapping: Transforming each element in a collection into a different element.
+  ```java
+  List<Integer> squaredNumbers = numbers.stream().map(n -> n * n).toList();
+  ```
+* Reducing: Aggregating elements of a collection into a single result (e.g., sum, count, min, max).
+```java
+    int sum = numbers.stream().reduce(0, Integer::sum);
+```
+
+* Collecting: Gathering the results of stream operations into a new collection or data structure.
+
+ ```java
+
+    List<String> words = Arrays.asList("hello", "world", "java", "hello");
+    Set<String> uniqueWords = words.stream().collect(Collectors.toSet());
+```
+* Sorting: Ordering elements within a stream.
+```java
+    List<String> unsortedNames = Arrays.asList("Charlie", "Alice", "Bob");
+    List<String> sortedNames = unsortedNames.stream()
+                                             .sorted()
+                                             .collect(Collectors.toList());
+```
+* Grouping and Partitioning: Organizing elements based on specific criteria.
+  ```java
+      List<Person> people = Arrays.asList(new Person("Alice", 30), new Person("Bob", 25), new Person("Charlie", 30));
+    Map<Integer, List<Person>> peopleByAge = people.stream()
+                                                   .collect(Collectors.groupingBy(Person.age));
+  ```
+  
 **Syntax:**  
 ```java
 (parameters) -> expression
