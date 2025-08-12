@@ -40,7 +40,11 @@ List<Integer> evenNumbers = numbers.stream().filter(number -> number%2==0).toLis
 ```
 * Grouping and Partitioning: Organizing elements based on specific criteria.
   ```java
-      List<Person> people = Arrays.asList(new Person("Alice", 30), new Person("Bob", 25), new Person("Charlie", 30));
+      List<Person> people = Arrays.asList(
+        new Person("Alice", 30),
+        new Person("Bob", 25),
+        new Person("Charlie", 30)
+  );
     Map<Integer, List<Person>> peopleByAge = people.stream()
                                                    .collect(Collectors.groupingBy(Person.age));
   ```
