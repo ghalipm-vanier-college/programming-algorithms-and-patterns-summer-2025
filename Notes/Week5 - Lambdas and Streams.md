@@ -47,6 +47,8 @@ List<Integer> evenNumbers = numbers.stream().filter(number -> number%2==0).toLis
   );
     Map<Integer, List<Person>> peopleByAge
         = people.stream().collect(Collectors.groupingBy(Person.age));
+   Map<Integer, List<Person>> peopleByName
+        = people.stream().collect(Collectors.groupingBy(Person.name));
   ```
   
 **Syntax:**  
