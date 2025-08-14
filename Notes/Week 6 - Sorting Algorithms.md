@@ -1,9 +1,49 @@
 # Sorting Algorithms
+There is no single best sorting algorithm. Quicksort is the fastest known comparison-based sorting algorithm when applied to large, unordered, sequences. It also has the advantage of being an in-place (or nearly in-place) sort. Unfortunately, quicksort has some weaknesses: it's worst-case performance is 
+O
+(
+n
+2
+)
+, and it is not stable. Merge sort shares neither of these disadvantages: it is stable and it requires 
+O
+(
+n
+log
+n
+)
+ steps in the worst case. Sadly, merge sort requires 
+O
+(
+n
+)
+ additional space and it runs more slowly than quick sort on most inputs.
+
+What we really want is a sorting algorithm that is as fast as quicksort, stable, in-place, with 
+O
+(
+n
+log
+n
+)
+ worst-case performance. Unfortunately, no such algorithm has yet been discovered.
+
+Here are 5 most popular sorting algorithms in java, and can be implemented with both a recursive as well as an iterative approach. 
+
+* Merge Sort
+* Heap Sort
+* Insertion Sort
+* Selection Sort
+* Bubble Sort
+
+ These are the best sorting methods in java currently in the industry.
+ 
 ## Insertion Sort
 * Insertion sort the simplest and the easiest for implementing and understanding compared to others, even though it isn’t a much-optimized algorithm for sorting an array. 
  
 * In insertion sort, one picks up an element and considers it to be the key. 
   If the key is smaller than its predecessor, it is shifted to its correct location in the array.
+
 
 ### Insertion Sort Algorithm 
 * Starts at index 1 (since a single element at index 0 is “sorted” by default).
