@@ -1,14 +1,12 @@
-# Task3 - Liskov Substitution Principle (SRP)
+# Task3 - Liskov Substitution Principle (LSP)
 
- * Sending email or sms or both to customers depending on customers preference.
- * Customer must have id, name, phoneNumber, preference.
+ * S
 
-# Task4 -	Interface Segregation Principle (ISP) : Area, Perimeter Calculation
+# Task4 -	Interface Segregation Principle (ISP) : Area, Perimeter Calculation?
 
-* You should be able to add new functionality (e.g., new shapes)
-  by extending the code without altering existing code.
+* You should be able to 
   
-* Calculate the area of a circle and a rectangle, using an abstract base class and
+* Calculate the area of a circle and a rectangle, using a proper `interface` and
   extension through inheritance.
 
 # Task5 -	Dependency Inversion Principle (DIP) : 
