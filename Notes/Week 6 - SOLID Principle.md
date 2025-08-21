@@ -59,9 +59,70 @@ interface Printer { void print(); }
 interface Scanner { void scan(); }
 ```
 ###	Dependency Inversion Principle (DIP): [change tight coupling to loose coupling ]
+
 * High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
   This means that dependencies should be resolved through abstraction, rather than concrete implementations.
 
+### Without DIP (“bad”): ##
+```java
+class EmailSender {
+    void send(String msg) { System.out.println("Email: " + msg); }
+}
 
+class OrderService {
+    private final EmailSender sender = new EmailSender();
+    void confirmOrder() {
+        sender.send("Your order is confirmed.");
+    }
+}
+```
+* Problem: OrderService is tightly coupled to EmailSender. What if you want to add SMS, mock for testing, or change notification?
+
+ ### With DIP (“good”): ##
+ ```java
+// Abstraction (depends on interfaces)
+interface Notifier {
+    void send(String message);
+}
+
+// Low-level implementations
+class EmailSender implements Notifier {
+    public void send(String msg) { System.out.println("Email: " + msg); }
+}
+class SmsSender implements Notifier {
+    public void send(String msg) { System.out.println("SMS: " + msg); }
+}
+
+// High-level module depends on abstraction, not concrete class
+class OrderService {
+    private final Notifier notifier;
+    public OrderService(Notifier notifier) { this.notifier = notifier; }
+
+    void confirmOrder() {
+        notifier.send("Your order is confirmed.");
+    }
+}
+
+// Demo (main)
+public class Demo {
+    public static void main(String[] args) {
+        Notifier email = new EmailSender();
+        Notifier sms = new SmsSender();
+
+        OrderService emailOrder = new OrderService(email);
+        OrderService smsOrder = new OrderService(sms);
+
+        emailOrder.confirmOrder(); // Email: Your order is confirmed.
+        smsOrder.confirmOrder();   // SMS: Your order is confirmed.
+    }
+}
+```
+# Pros:
+* OrderService cares only about the contract (Notifier), not the implementation.
+
+* Can add new notification types (Slack, WhatsApp, Mock) with no changes to OrderService.
+
+* Promotes loose coupling, extensibility, and easier maintenance.
+  
 By following `SOLID` principles, developers can create `more flexible, maintainable, and scalable object-oriented software`. 
