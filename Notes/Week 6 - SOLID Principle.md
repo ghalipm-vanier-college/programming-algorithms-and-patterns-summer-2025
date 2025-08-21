@@ -77,7 +77,7 @@ class OrderService {
     }
 }
 ```
-* Problem: OrderService is tightly coupled to EmailSender. What if you want to add SMS, mock for testing, or change notification?
+* Problem: OrderService is tightly coupled to EmailSender. What if you want to add SMS, or change notification?
 
  ### With DIP (“good”): ##
  ```java
