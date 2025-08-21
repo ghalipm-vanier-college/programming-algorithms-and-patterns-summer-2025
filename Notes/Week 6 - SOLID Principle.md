@@ -41,10 +41,10 @@ class Square extends Shape { /* ... */ }
   This means that a derived class should be able to replace its parent class without causing any problems. 
 ```java
 //Not LSP!
-class Bird { void fly() { /* ... */ } }
-class Ostrich extends Bird { /* Ostrich can’t fly – violates LSP! */ }
+class Car { void refeul() { /* ... */ } }
+class ElectricCar extends Car { /* ElectricCar can’t refeul – violates LSP! */ }
 
-Good LSP: Use interfaces: interface Flyer { void fly(); }
+Good LSP: Use interfaces: interface ElectricVehicle { void recharge(); }
 ```
 
 ###	Interface Segregation Principle (ISP):
