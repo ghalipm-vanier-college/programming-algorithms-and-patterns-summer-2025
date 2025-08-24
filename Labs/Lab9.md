@@ -1,5 +1,3 @@
-The focus is on the basics, hands-on practice, and understanding tree traversal and manipulation using own 
-custom `MyBinaryTree` class or similar.
 
 ## Lab: Problem Solving with Binary Trees
 
