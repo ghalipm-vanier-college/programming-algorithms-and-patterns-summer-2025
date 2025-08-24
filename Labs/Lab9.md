@@ -28,4 +28,3 @@ The purpose of the exercises - to get comfortable with:
 - Recursion (implicitly in most tree operations),
 - Understanding key tree properties.
 
-Let me know if you’d like sample code solutions or further tree problem variations!
