@@ -47,7 +47,7 @@
 ### **Question 7 (10 points)**
 
 * Explain the core idea behind the Model-View-Controller (MVC) pattern.  
-* In Spring MVC, what roles do the Controller and the View components play?
+* In Spring MVC, what roles do the Controller and the View components play?(Code or no code is fine).
 
 ***
 
